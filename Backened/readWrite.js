@@ -1,12 +1,17 @@
-const fs = require('node:fs');
+// const fs = require('fs');
 
-try{
-    const content ='This is written synchronously.';
-    fs.writeFileSync('output.txt',content,'utf8');
-    console.log('File written successfully!');
-}catch(err){
-    console.error(err);
-}
+// try {
+//     // Read the file
+//     const data = fs.readFileSync('fileWrite.js', 'utf8');
+
+//     // Display file contents
+//     console.log(data);
+
+// } catch (err) {
+//     // Display error if file cannot be read
+//     console.log("Error:", err);
+// }
+
 
 const fs = require('fs');
 
