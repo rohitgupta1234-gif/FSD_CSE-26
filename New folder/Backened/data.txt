@@ -1,0 +1,5 @@
+
+Hello Rohit!
+Welcome to Node.js.
+This file is created using the File System module.
+We are learning file handling in Node.js.
