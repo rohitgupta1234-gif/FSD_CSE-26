@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Library Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📚 Library Management System</h1>
+
+        <p class="subtitle">
+            Manage your books easily
+        </p>
+
+        <!-- Add / Update Book -->
+        <div class="form-box">
+
+            <h2 id="formTitle">Add New Book</h2>
+
+            <input type="hidden" id="bookId">
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Enter book title"
+            >
+
+            <input
+                type="text"
+                id="author"
+                placeholder="Enter author name"
+            >
+
+            <input
+                type="number"
+                id="year"
+                placeholder="Enter publication year"
+            >
+
+            <button onclick="saveBook()" id="saveButton">
+                Add Book
+            </button>
+
+            <button
+                onclick="cancelEdit()"
+                id="cancelButton"
+                class="cancel"
+                style="display:none;"
+            >
+                Cancel
+            </button>
+
+        </div>
+
+        <!-- Book List -->
+
+        <div class="books-section">
+
+            <h2>📖 All Books</h2>
+
+            <div id="bookList"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
